@@ -135,7 +135,9 @@ describe("basics", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+            const object={
+                someProperty:1
+            };
             ////////////////////////////////////////////////////////////////////
 
             expect(object instanceof Object).to.equal(true);
@@ -145,13 +147,11 @@ describe("basics", function() {
 
     describe("Set a property to undefined", function() {
         it("should run without errors", function() {
-            const object = {
-                someProperty: 1
-            };
+        
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+            
             ////////////////////////////////////////////////////////////////////
 
             // object.someProperty is undefined...

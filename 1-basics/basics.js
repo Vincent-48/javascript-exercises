@@ -151,7 +151,9 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-            
+            const object = {
+                someProperty: 1
+            };
             ////////////////////////////////////////////////////////////////////
 
             // object.someProperty is undefined...

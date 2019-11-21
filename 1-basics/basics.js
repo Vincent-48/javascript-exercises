@@ -266,7 +266,7 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find a string that casts to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
-
+            const falsyString="";
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyString).to.equal("string");
@@ -283,7 +283,8 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find two different numbers that each cast to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
-
+            const falsyNumber1=0;
+            const falsyNumber2=NaN;
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyNumber1).to.equal("number");

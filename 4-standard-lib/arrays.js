@@ -368,7 +368,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function allGreaterThan(limit) {
+                return numbers.filter((number) => number > limit);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(allGreaterThan(3)).to.equal(false);
@@ -484,7 +486,9 @@ describe("arrays", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function createArray(...args) {
+                return new Array(...args);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(createArray(0) instanceof Array).to.equal(true);

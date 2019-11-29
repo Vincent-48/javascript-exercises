@@ -12,7 +12,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function isFiniteNumber(number){
+                return typeof number === "number" && Number.isFinite(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(isFiniteNumber(0)).to.equal(true);
@@ -33,6 +35,9 @@ describe("numbers", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
             // You will also need to do an additional check here.
+            function isNotANumber(number){
+                return typeof number !== "number" || Number.isNaN(number);
+            }
 
             ////////////////////////////////////////////////////////////////////////
 
@@ -53,7 +58,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function roundNumber(number){
+                return Math.round(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);
@@ -67,6 +74,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
+            function roundNumber(number){
+                return Math.floor(number);
+            }
 
             ////////////////////////////////////////////////////////////////////////
 
@@ -81,7 +91,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function roundNumber(number){
+                return Math.ceil(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);

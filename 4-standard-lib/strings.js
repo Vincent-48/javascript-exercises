@@ -46,7 +46,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function letterAt(string){
+                return text.charAt(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(letterAt(0)).to.equal("T");
@@ -62,7 +64,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function beginsWith(string){
+                return text.includes(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(beginsWith("The")).to.equal(true);

@@ -107,7 +107,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function getSmallestNumber(number){
+                return Math.min(...number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(getSmallestNumber([-1])).to.equal(-1);
@@ -156,7 +158,9 @@ describe("numbers", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
             // You will also need to do some calculations here.
-
+            function getRandomNumberBetween10And10Point1() {
+                return Math.random() * 0.1 + 10;
+            }
             ////////////////////////////////////////////////////////////////////////
 
             const previousNumbers = [];

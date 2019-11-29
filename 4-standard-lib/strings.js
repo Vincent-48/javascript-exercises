@@ -81,7 +81,10 @@ describe("strings", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            const text = "   example sentence   "
+            function removeWhitespaceAround(string){
+                return text.trim(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(removeWhitespaceAround("   example sentence   ")).to.equal(
@@ -99,7 +102,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function contains(string){
+                return text.includes(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(contains("quick")).to.equal(true);
@@ -117,7 +122,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function cut(number,x){
+                return text.slice(number,x);
+            } 
             ////////////////////////////////////////////////////////////////////
 
             expect(cut(0)).to.equal(

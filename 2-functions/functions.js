@@ -277,7 +277,7 @@ describe("functions", function() {
                 // This means that we can't change it.
                 // Is there a way to still make 'myConst' equal true here?
                 // ✏️ ADD CODE HERE ✏️
-
+                return arguments.length;
                 ////////////////////////////////////////////////////////////////////
 
                 if (myConst !== true) {

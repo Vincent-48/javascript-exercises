@@ -235,7 +235,7 @@ describe("arrays", function() {
             // You need to do that manually first.
             // 🐛🛠 FIX THE BUG 🛠🐛
             function sortWithoutMutation() {
-                return array.sort();
+                return array.slice().sort();
             }
             ////////////////////////////////////////////////////////////////////
 
@@ -252,7 +252,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function cut(start, end) {
+                return array.slice(start, end);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(cut(1)).to.eql(["b", "c", "d", "e", "f"]);
@@ -269,7 +271,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function firstOccurrence(string) {
+                return array.indexOf(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(firstOccurrence("a")).to.equal(0);
@@ -284,7 +288,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function lastOccurrence(string) {
+                return array.lastIndexOf(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(lastOccurrence("a")).to.equal(4);
@@ -299,7 +305,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function contains(string) {
+                return array.includes(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(contains("a")).to.equal(true);
@@ -314,7 +322,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function combine(...items) {
+                return array.concat(...items);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(combine("b")).to.eql(["a", "b"]);
@@ -338,7 +348,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function excludeNumbersBelowLimit(limit) {
+                return numbers.filter((number) => number >= limit);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(excludeNumbersBelowLimit(1)).to.eql([1, 2, 3, 4, 5]);

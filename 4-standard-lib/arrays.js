@@ -12,7 +12,9 @@ describe("arrays", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function getNumberOfItems(array){
+                return array.length;
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(getNumberOfItems([])).to.equal(0);
@@ -28,7 +30,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function removeLastItem(){
+                return array.pop();
+            }    
             ////////////////////////////////////////////////////////////////////
 
             expect(removeLastItem()).to.equal("d");
@@ -44,7 +48,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function appendItem(item) {
+                return array.push(item);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(appendItem("a")).to.equal(1);
@@ -60,7 +66,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function appendMultipleItems(...args) {
+                return array.push(...args);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(appendMultipleItems("a", "b", "c")).to.equal(3);
@@ -76,7 +84,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function removeFirstItem(item) {
+                return array.shift(item);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(removeFirstItem()).to.equal("a");
@@ -92,7 +102,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function prependMultipleItems(...args) {
+                return array.unshift(...args);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(prependMultipleItems("a", "b", "c")).to.equal(4);
@@ -108,7 +120,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function addItemsAtFirstPosition(...args) {
+                return array.splice(1, 0, ...args);
+            }
             ////////////////////////////////////////////////////////////////////
 
             addItemsAtFirstPosition("a");
